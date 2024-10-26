@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+input::placeholder{
+    color: aliceblue;
+}
+input{
+    height: 5rem;
+    width: 100%;
+    text-align: right;
+    padding: 25px;
+    margin-top: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 30px;
+    box-shadow: 10px 10px 10px rgba(255,255,255,0.1);
+}
+.calculator{
+    margin-left: 500px ;
+    background-color: black;
+    height: 550px;
+    width: 350px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.calculator-calculation-area{
+    
+}
+.calculator-button-area{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 1.4rem;
+    grid-row-gap: 0.8rem;
+    width: 300px;
+    margin-top: 40px;
+}
+button{
+    text-indent: -6px;
+    padding: 20px;
+    width: 60px;
+    margin: 5px;
+    height: 60px;
+    cursor: pointer; 
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.4);
+}
+
+button:active{
+    background-color: grey;
+}
+.operator{
+    background: yellowgreen;
+}
+.delete{
+    background: red;
+}
+
+
+
+
+
+/* responsive */
+/* Responsive styling for mobile */
+@media screen and (max-width: 768px) {
+    /* Adjust calculator container */
+    .calculator {
+        width: 100%;
+        margin: 20px auto;
+        height: auto;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    /* Calculator display/input box */
+    input {
+        height: 3.5rem;
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+    
+    /* Button area */
+    .calculator-button-area {
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 0.5rem;
+        grid-row-gap: 0.5rem;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    /* Buttons */
+    button {
+        width: 50px;
+        height: 50px;
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Further adjustments for extra-small screens */
+@media screen and (max-width: 480px) {
+    input {
+        font-size: 2rem;
+        padding: 10px;
+    }
+
+    button {
+        font-size:20px;
+        height: 45px;
+    }
+}
+
+
+
+
+
